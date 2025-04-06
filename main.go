@@ -20,10 +20,12 @@ rune        alias for int32
 */
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	var nombrePersona string = "Eze"
+	/*var nombrePersona string = "Eze"
 	fmt.Println("Hola soy " + nombrePersona)
 	var apellidoPersona = "Castells"
 	fmt.Println("Mi apellido es " + apellidoPersona)
@@ -36,5 +38,18 @@ func main() {
 	fmt.Println("El año es", anioActual)
 
 	var edad int8 = 40
-	fmt.Println("Mi edad es", edad)
+	fmt.Println("Mi edad es", edad)*/
+
+	//Uso arrays o slice (array sin definir una dimension)
+	var array = [4]string{"Banana", "Manzana", "Naranja", "limon"}
+	fmt.Println(array)
+
+	array[0] = "Pera"
+	fmt.Println(array)
+
+	var arraySlice []string // Slice dinámico, sin tamaño fijo
+
+	arraySlice = append(arraySlice, "Argentina")
+	fmt.Println(arraySlice)
+
 }
